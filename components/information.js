@@ -4,7 +4,6 @@ import { MyData } from "../pages/[service]/[page]";
 const Information = (props) => {
   // 表示対象を取得する
   const myData = useContext(MyData);
-  console.log("myData" + JSON.stringify(myData));
   const infoData = myData.infoData;
   return (
     <div>

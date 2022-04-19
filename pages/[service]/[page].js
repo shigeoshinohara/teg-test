@@ -3,7 +3,7 @@ import Information from "../../components/information";
 import Box from "../../components/box";
 import DOMParserReact from "dom-parser-react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+
 import {
   fetchPageDetail,
   fetchAllPage,
@@ -48,8 +48,6 @@ const components = {
 };
 
 export default function Home({ html, dataObj }) {
-  const router = useRouter();
-
   return (
     <div className={styles.container}>
       <MyData.Provider value={dataObj}>
